@@ -45,7 +45,7 @@ while True:
         else:
             break
     except:
-        print("Error, debe ingresar un numero entero")
+        print("Error, ingresar un numero entero")
         continue        
     
 mm_a = str(int(mm)-1)
