@@ -1,61 +1,7 @@
 #Movimientos bancarios del sistema
-import pandas as pd
+from InicioPrograma import callback, espacios, yy, mm, mm_a
 import numpy as np
-
-def espacios (texto):
-    a = texto.strip()
-    a = a.replace(" ","")
-    return a
-
-def callback(x):
-    x['seq'] = range(1, x.shape[0] + 1)
-    return x
-
-
-while True:
-    mm = input("Mes a conciliar: ")
-    
-    try:
-        aa = int(mm)
-        
-        if aa < 1 or aa > 12:
-            print("Error, debe ingresar un numero entre 1 y 12")
-            continue
-            
-        elif len(mm) != 2:
-            print("Error, el formato para ingresar el mes es de 2 digitos, ejemplo mayo = 05")
-            continue
-            
-        else:
-            break
-    except:
-        print("Error, debe ingresar un numero entero")
-        continue
-        
-while True:
-    yy = input("Año a conciliar: ")
-    
-    try:
-        bb = int(yy)
-        
-        if bb < 2000 or bb > 2100:
-            print("Error, debe ingresar un año entre 2000 y 2100")
-            continue
-            
-        else:
-            break
-    except:
-        print("Error, ingresar un numero entero")
-        continue        
-    
-mm_a = str(int(mm)-1)
-
-
-
-if len(mm_a) < 2:
-    mm_a = "0" + mm_a
-else:
-    pass
+import pandas as pd
 
 edificios = [76, 82, 83, 84, 85, 86, 87, 88, 89, 90, 96, 97, 98, 99, 109, 110, 111]
 #edificios = [76, 89, 96, 97, 98, 99, 109, 110, 111]
