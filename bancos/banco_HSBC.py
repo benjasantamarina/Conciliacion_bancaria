@@ -1,4 +1,7 @@
 #Banco HSBC
+import pandas as pd
+import numpy as np
+from InicioPrograma import espacios, callback, mm, yy, mm_a
 
 bancos_hsbc = [89, 99]
 
