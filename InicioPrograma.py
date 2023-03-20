@@ -1,8 +1,5 @@
 #Importacion de librerias y creacion de funciones
 
-import pandas as pd
-import numpy as np
-
 def espacios (texto):
     a = texto.strip()
     a = a.replace(" ","")
