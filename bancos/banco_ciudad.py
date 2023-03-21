@@ -1,4 +1,4 @@
-#Banco Ciudad
+#Banco ciudad
 import pandas as pd
 import numpy as np
 from InicioPrograma import espacios, callback, yy, mm, mm_a
