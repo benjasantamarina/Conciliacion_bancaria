@@ -1,5 +1,6 @@
 {
     "python.analysis.extraPaths": [
-        "./bancos"
+        "./bancos",
+        "./contabilidad"
     ]
 }
