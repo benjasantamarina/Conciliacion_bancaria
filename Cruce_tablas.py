@@ -6,7 +6,7 @@ from Consolidado_bancos import expensas_banco
 from bancos_contable import banco_contable
 from InicioPrograma import yy, mm, mm_a 
 
-#-----------------Cruce de tablas----------------------------------------
+#-----------------Cruce de tablas-------------------------------------
 
 expensas_banco.set_index("Concatenado", inplace=True)
 expensas_banco = pd.merge(expensas_banco, banco_contable[["Referencia"]],how="left", left_index=True, right_index=True)
