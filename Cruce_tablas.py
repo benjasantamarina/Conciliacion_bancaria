@@ -37,7 +37,7 @@ expensas_contable.set_index("Consorcio", inplace = True)
 expensas_contable.drop(["seq", "Movimiento", "Mes", "Banco", "Concepto"], axis = 1, inplace = True)
 expensas_contable.sort_values(by=["Consorcio"], inplace = True)
 
-#-----------------Exporta a excel el resultado de la conciliacion---------------------------------------
+#-----------------Exporta a excel el resultado de la conciliacion-------------
 
 expensas_banco.to_excel("C:/Users/Benja/Desktop/expensas_banco.xlsx")
 expensas_contable.to_excel("C:/Users/Benja/Desktop/expensas_contable.xlsx")
